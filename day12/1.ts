@@ -123,4 +123,4 @@ for (const nextNode of shiftItems(nextNodes)) {
 }
 
 // console.log(nodes, nextNodes);
-console.log(nodes.get(stringify(...end)));
+console.log(nodes.get(stringify(...end))?.cost);
