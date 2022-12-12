@@ -23,7 +23,7 @@ let signalStrength = 0;
 for (let tick = 1; tick <= 220; tick++) {
 	if ([20, 60, 100, 140, 180, 220].indexOf(tick) !== -1) {
     const strength = tick * X;
-    console.log(`---- ${tick}: strength: ${strength}, X: ${X}`);
+    // console.log(`---- ${tick}: strength: ${strength}, X: ${X}`);
 
     signalStrength += strength;
   }
@@ -43,7 +43,7 @@ for (let tick = 1; tick <= 220; tick++) {
     curr = input[++i] || { code: "noop", ticksLeft: Infinity };
   }
 	
-  console.log({ X, i, curr });
+  // console.log({ X, i, curr });
 }
 
 console.log(signalStrength);

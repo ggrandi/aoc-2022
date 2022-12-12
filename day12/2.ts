@@ -128,7 +128,7 @@ const pathFind = (...start: [number, number]): number => {
 console.log(Math.min(...input.map((row, i) => {
   return Math.min(...row.map((val, j) => {
     if (val === 0) {
-      console.log("checking", i, j);
+      // console.log("checking", i, j);
       return pathFind(i, j);
     }
 
