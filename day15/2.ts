@@ -46,13 +46,13 @@ const maxY = 4_000_000;
 
 search:
 for (let i = 0; i < sensors.length; i++) {
-  value:
+  values:
   for (const [x, y] of valuesOutside(sensors[i])) {
     if (!(minX <= x && x <= maxX && minY <= y && y <= maxY)) continue;
 
     for (const sensor of sensors) {
       if (distance(sensor.x, sensor.y, x, y) <= sensor.distance) {
-        continue value;
+        continue values;
       }
     }
 
